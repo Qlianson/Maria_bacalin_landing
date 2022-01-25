@@ -12,18 +12,18 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header_logo"><img src="img/mbacalina_logo.png" alt="Logotype"></a>
                 <ul class="header_menu">
-                    <li class="header_menu_item"><a href="" class="header_menu_link">обо мне</a></li>
-                    <li class="header_menu_item"><a href="" class="header_menu_link">преимущества</a></li>
-                    <li class="header_menu_item"><a href="" class="header_menu_link">цены</a></li>
-                    <li class="header_menu_item"><a href="" class="header_menu_link">контакты</a></li>
+                    <li class="header_menu_item"><a href="#aboutme" class="header_menu_link">обо мне</a></li>
+                    <li class="header_menu_item"><a href="#achievement" class="header_menu_link">преимущества</a></li>
+                    <li class="header_menu_item"><a href="#prices" class="header_menu_link">цены</a></li>
+                    <li class="header_menu_item"><a href="#contact" class="header_menu_link">контакты</a></li>
                 </ul>
                 <a href="tel:+37369419800" class="header_phone">тел:<span>069 419 800</span></a>
-                <div href="" class="header_socials">
+                <div class="header_socials">
                     <a href="" class="header_inst"><img src="icons/Inst.png" alt="instagram_ico"></a>
                     <a href="" class="header_fb"><img src="icons/fb.png" alt="facebook_ico"></a>
                 </div>
@@ -36,8 +36,8 @@
                         Меня зовут Мария
                         и я научу тебя
                         Восточному Танцу</div>
-                    <button class="content_btn">Оставить заявку</button>
-                    <a href="#" class="content_subbtn">
+                    <button data-modal="consultation" class="content_btn">Оставить заявку</button>
+                    <a href="#contact" class="content_subbtn">
                         <div class="content_subtext">Записаться на бесплатный урок</div>
                         <!-- <div class="content_arrow"></div> -->
                         <img src="icons/arrow_promo.png" alt="" class="content_arrow">
@@ -46,8 +46,7 @@
             </div>
         </div>
     </section>
-
-    <section class="about">
+    <section class="about" id="aboutme">
         <div class="container">
             <h2 class="title">Обо мне</h2>
             <div class="about_descr">Я, Мария Бакалин - профессиональный танцор, преподаватель, хореограф, судья Bellydance и Tribal Fusion с танцевальным опытом 17 лет (из которых 15 лет - преподаю), мама.
@@ -58,7 +57,6 @@
             </div>
             <img src="icons/dots_about_1.png" alt="dots" class="about_dots about_dots_top">
             <img src="icons/dots_about_2.png" alt="dots" class="about_dots about_dots_bot">
-
             <div class="achievements">
                 <div class="achievements_wrapper">
                     <div class="achievements_block">
@@ -92,8 +90,7 @@
             </div>
         </div>
     </section>
-
-    <section class="reason">
+    <section class="reason" id="achievement">
         <div class="container">
             <h2 class="title">
                 Почему Bellydance и Tribal Fusion?
@@ -120,8 +117,7 @@
             </ul>
         </div>
     </section>
-
-    <section class="price">
+    <section class="price" id="prices">
         <div class="container">
             <h2 class="title">Цены</h2>
             <div class="price_wrapper">
@@ -132,7 +128,7 @@
                             8 занятий</div>
                         <div class="price_descr">Групповые занятия в студии</div>
                         <div class="price_tag">500 MDL (25 EUR)</div>
-                        <button class="price_btn">Заказать</button>
+                        <button data-modal="consultation" class="price_btn">Заказать</button>
                     </div>
                 </div>
                 <div class="price_card">
@@ -142,7 +138,7 @@
                             12 занятий</div>
                         <div class="price_descr">Групповые занятия в студии</div>
                         <div class="price_tag">650 MDL (32 EUR)</div>
-                        <button class="price_btn">Заказать</button>
+                        <button data-modal="consultation" class="price_btn">Заказать</button>
                     </div>
                 </div>
                 <div class="price_card">
@@ -151,7 +147,7 @@
                         <div class="price_title">Разовое занятие</div>
                         <div class="price_descr">Групповые занятия в студии</div>
                         <div class="price_tag">80 MDL (4 EUR)</div>
-                        <button class="price_btn">Заказать</button>
+                        <button data-modal="consultation" class="price_btn">Заказать</button>
                     </div>
                 </div>
                 <div class="price_card">
@@ -161,7 +157,7 @@
                             занятия</div>
                         <div class="price_descr">Персональные офлайн занятия</div>
                         <div class="price_tag">400 MDL (20 EUR)</div>
-                        <button class="price_btn">Заказать</button>
+                        <button data-modal="consultation" class="price_btn">Заказать</button>
                     </div>
                 </div>
                 <div class="price_card">
@@ -170,7 +166,7 @@
                         <div class="price_title">Онлайн занятия</div>
                         <div class="price_descr">Персональные онлайн занятия</div>
                         <div class="price_tag">400 MDL (20 EUR)</div>
-                        <button class="price_btn">Заказать</button>
+                        <button data-modal="consultation" class="price_btn">Заказать</button>
                     </div>
                 </div>
                 <div class="price_card">
@@ -180,18 +176,17 @@
                         <div class="price_descr price_descr_small">Индивидуальная постановка для любого мероприятия 
                             (от семейного праздника до конкурса)</div>
                         <div class="price_tag price_tag_small">Индивидуально</div>
-                        <button class="price_btn">Заказать</button>
+                        <button data-modal="consultation" class="price_btn">Заказать</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="contacts">
+    <section class="contacts" id="contact">
         <div class="container">
             <div class="contacts_side">
                 <div class="contacts_leftwrp">
-                    <div class="title title_left">Контакты</div>
+                    <h2 class="title title_left">Контакты</h2>
                     <div class="contacts_wrapper">
                         <div class="contacts_line">
                             <img src="icons/phone.png" alt="" class="contacts_ico">
@@ -199,12 +194,12 @@
                         </div>
                         <div class="contacts_line">
                             <img src="icons/home.png" alt="" class="contacts_ico">
-                            <div href="" class="contacts_specs">адрес:
+                            <div class="contacts_specs">адрес:
                                 <span>г. Кишинев, ул. В. Пыркэлаб 52, УЛИМ</span></div>
                         </div>
                         <div class="contacts_line">
                             <img src="icons/mail.png" alt="" class="contacts_ico">
-                            <div href="" class="contacts_specs">e-mail:
+                            <div class="contacts_specs">e-mail:
                                 <span>mariabacalin@gmail.com</span></div>
                         </div>
                         <div class="contacts_line">
@@ -217,9 +212,8 @@
                         </div>
                     </div>
                 </div>
-    
                 <div class="contacts_rightwrp">
-                    <div class="title title_left">Записаться на бесплатное занятие</div>
+                    <h2 class="title title_left">Записаться на бесплатное занятие</h2>
                     <div class="contacts_subtitle">Запись на 1 пробное занятие в одну из офлайн групп </div>
                     <form class="contacts_form" action="#">
                         <div class="contacts_enter">
@@ -240,12 +234,11 @@
             </div>
         </div>
     </section>
-
     <footer class="footer">
         <div class="container">
             <div class="footer_sides">
                 <div class="footer_leftblock">
-                    <img class="footer_logo" src="img/mbacalina_logo.png">
+                    <img class="footer_logo" src="img/mbacalina_logo.png" alt="footer_logotype">
                     <div class="footer_nav">
                         <div class="footer_nav_wrapper">
                             <a href="" class="footer_nav_link">обо мне</a>
@@ -262,9 +255,8 @@
                     <div class="contacts_line contacts_line_nomrg">
                         <img src="icons/phone.png" alt="" class="contacts_ico">
                         <a href="tel:+37369419800" class="contacts_specs contacts_specs_phone contacts_specs_phone_nound">телефон:<span>069419800</span></a>
-                        
                     </div>
-                    <button class="footer_btn">Заказать обратный звонок</button>
+                    <button data-modal="consultation" class="footer_btn">Заказать обратный звонок</button>
                     <div class="footer_social">
                         <a href="" class="contacts_social"><img src="icons/inst_bottom.png" alt="" class="contacts_inst"></a>
                         <a href="" class="contacts_social"><img src="icons/fb_bottom.png" alt="" class="contacts_fb"></a>
@@ -274,10 +266,34 @@
                     </div>
                 </div>
             </div>
-        
-
             <a href="https://instagram.com" class="personal_tag">website created by fellow</a>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal_close">&times;</div>
+            <div class="modal_title">Заполни заявку</div>
+            <div class="modal_subtitle">и я свяжусь с тобой в ближайшее время</div>
+            <form class="modal_form" action="#">
+                <input required id="name_inp" name="name" placeholder="Введите ваше имя" type="text" class="modal_input">
+                <input required id="phone_inp" name="phone" placeholder="Введите ваш телефон" type="number" class="modal_input">
+                <input required id="email_inp" name="email" placeholder="Введите ваш e-mail" type="email" class="modal_input">
+                <button class="modal_btn">Отправить</button>
+            </form>
+        </div>
+        <div class="modal" id="thanks">
+            <div class="modal_close">&times;</div>
+            <div class="modal_title modal_title_2">Ура! Заявка получена!</div>
+            <div class="modal_subtitle modal_subtitle_2">Скоро я свяжусь с вами и мы обсудим
+                наше сотрудничество.</div>
+            <div class="modal_goodday">Хорошего дня!</div>
+        </div>
+    </div>
+    <a href="#up" class="pageup"><img src="icons/arrow_up.svg" alt="page_up_arrow"></a>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
